@@ -1,0 +1,179 @@
+﻿<Window x:Class="Timer.Views.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="ShellView" Height="450" Width="1060" Background="#343434">
+    <Viewbox>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20" />
+
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="20" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="Timer1" Grid.Row="1" Grid.Column="2" FontSize="50" HorizontalAlignment="Center"
+                       Foreground="AliceBlue" />
+            <Grid Grid.Row="3" Grid.Column="2">
+
+                <Grid.ColumnDefinitions>
+
+
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="80" />
+
+                </Grid.ColumnDefinitions>
+
+                <Button Name="StartTimer1" Style="{StaticResource StartButton}" Grid.Column="0"
+                        HorizontalAlignment="Center"
+                        Width="{Binding Path=StartTimer1Width, Mode=OneWay}" Content="Start" FontSize="20" Height="75" />
+
+                <Button Name="StopTimer1" Grid.Column="0" HorizontalAlignment="Center"
+                        Width="{Binding Path=StopTimer1Width, Mode=OneWay}" Content="Stop" FontSize="20" Height="75"
+                        Style="{StaticResource StopButton}" />
+
+                <Button Name="ResetTimer1" Grid.Column="2" HorizontalAlignment="Center"
+                        Width="75" Content="Reset" FontSize="20" Height="75"
+                        IsEnabled="{Binding Path=EnableResetTimer1, Mode=OneWay}"
+                        Style="{StaticResource ResetButton}" />
+
+
+            </Grid>
+
+            <TextBlock Grid.Row="5" Grid.Column="2" FontSize="30" Foreground="AliceBlue" HorizontalAlignment="Center">Hours</TextBlock>
+
+            <TextBlock x:Name="Hours1" Grid.Row="6" Grid.Column="2" FontSize="20" Foreground="AliceBlue"
+                       HorizontalAlignment="Center" />
+
+
+            <TextBlock x:Name="Timer2" Grid.Row="1" Grid.Column="4" FontSize="50" HorizontalAlignment="Center"
+                       Foreground="AliceBlue" />
+            <Grid Grid.Row="3" Grid.Column="4">
+
+                <Grid.ColumnDefinitions>
+
+
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="80" />
+
+                </Grid.ColumnDefinitions>
+
+                <Button Name="StartTimer2" Style="{StaticResource StartButton}" Grid.Column="0"
+                        HorizontalAlignment="Center"
+                        Width="{Binding Path=StartTimer2Width, Mode=OneWay}" Content="Start" FontSize="20" Height="75" />
+
+                <Button Name="StopTimer2" Grid.Column="0" HorizontalAlignment="Center"
+                        Width="{Binding Path=StopTimer2Width, Mode=OneWay}" Content="Stop" FontSize="20" Height="75"
+                        Style="{StaticResource StopButton}" />
+
+                <Button Name="ResetTimer2" Grid.Column="2" HorizontalAlignment="Center"
+                        Width="75" Content="Reset" FontSize="20" Height="75"
+                        IsEnabled="{Binding Path=EnableResetTimer2, Mode=OneWay}"
+                        Style="{StaticResource ResetButton}" />
+
+
+            </Grid>
+
+            <TextBlock Grid.Row="5" Grid.Column="4" FontSize="30" Foreground="AliceBlue" HorizontalAlignment="Center">Hours</TextBlock>
+
+            <TextBlock x:Name="Hours2" Grid.Row="6" Grid.Column="4" FontSize="20" Foreground="AliceBlue"
+                       HorizontalAlignment="Center" />
+
+
+            <TextBlock x:Name="Timer3" Grid.Row="1" Grid.Column="6" FontSize="50" HorizontalAlignment="Center"
+                       Foreground="AliceBlue" />
+            <Grid Grid.Row="3" Grid.Column="6">
+
+                <Grid.ColumnDefinitions>
+
+
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="80" />
+
+                </Grid.ColumnDefinitions>
+
+                <Button Name="StartTimer3" Style="{StaticResource StartButton}" Grid.Column="0"
+                        HorizontalAlignment="Center"
+                        Width="{Binding Path=StartTimer3Width, Mode=OneWay}" Content="Start" FontSize="20" Height="75" />
+
+                <Button Name="StopTimer3" Grid.Column="0" HorizontalAlignment="Center"
+                        Width="{Binding Path=StopTimer3Width, Mode=OneWay}" Content="Stop" FontSize="20" Height="75"
+                        Style="{StaticResource StopButton}" />
+
+                <Button Name="ResetTimer3" Grid.Column="2" HorizontalAlignment="Center"
+                        Width="75" Content="Reset" FontSize="20" Height="75"
+                        IsEnabled="{Binding Path=EnableResetTimer3, Mode=OneWay}"
+                        Style="{StaticResource ResetButton}" />
+
+
+            </Grid>
+
+            <TextBlock Grid.Row="5" Grid.Column="6" FontSize="30" Foreground="AliceBlue" HorizontalAlignment="Center">Hours</TextBlock>
+
+            <TextBlock x:Name="Hours3" Grid.Row="6" Grid.Column="6" FontSize="20" Foreground="AliceBlue"
+                       HorizontalAlignment="Center" />
+
+
+            <TextBlock x:Name="Timer4" Grid.Row="1" Grid.Column="8" FontSize="50" HorizontalAlignment="Center"
+                       Foreground="AliceBlue" />
+            <Grid Grid.Row="3" Grid.Column="8">
+
+                <Grid.ColumnDefinitions>
+
+
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="80" />
+
+                </Grid.ColumnDefinitions>
+
+                <Button Name="StartTimer4" Style="{StaticResource StartButton}" Grid.Column="0"
+                        HorizontalAlignment="Center"
+                        Width="{Binding Path=StartTimer4Width, Mode=OneWay}" Content="Start" FontSize="20" Height="75" />
+
+                <Button Name="StopTimer4" Grid.Column="0" HorizontalAlignment="Center"
+                        Width="{Binding Path=StopTimer4Width, Mode=OneWay}" Content="Stop" FontSize="20" Height="75"
+                        Style="{StaticResource StopButton}" />
+
+                <Button Name="ResetTimer4" Grid.Column="2" HorizontalAlignment="Center"
+                        Width="75" Content="Reset" FontSize="20" Height="75"
+                        IsEnabled="{Binding Path=EnableResetTimer4, Mode=OneWay}"
+                        Style="{StaticResource ResetButton}" />
+
+
+            </Grid>
+
+            <TextBlock Grid.Row="5" Grid.Column="8" FontSize="30" Foreground="AliceBlue" HorizontalAlignment="Center">Hours</TextBlock>
+
+            <TextBlock x:Name="Hours4" Grid.Row="6" Grid.Column="8" FontSize="20" Foreground="AliceBlue"
+                       HorizontalAlignment="Center" />
+
+
+        </Grid>
+    </Viewbox>
+</Window>
